@@ -1,0 +1,9 @@
+﻿2015/12/24 13:22:10 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\unity4d\dnet\trunk\tests\tests.vcxproj" (Build ターゲット)。
+     1>Link:
+         tests.vcxproj -> C:\unity4d\dnet\trunk\d.net.compiler\Debug\tests.exe
+     1>プロジェクト "C:\unity4d\dnet\trunk\tests\tests.vcxproj" (Build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:00.07

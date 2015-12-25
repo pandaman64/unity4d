@@ -1,0 +1,16 @@
+﻿2015/12/24 13:20:30 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\unity4d\dnet\trunk\impcnvgen\impcnvgen.vcxproj" (Build ターゲット)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /IC:\unity4d\dnet\trunk\d.net.compiler\ /ZI /nologo /W0 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt ..\dmd\impcnvgen.c
+         impcnvgen.c
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\unity4d\dnet\trunk\d.net.compiler\Debug\impcnvgen.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\unity4d\dnet\trunk\d.net.compiler\Debug\impcnvgen.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"C:\unity4d\dnet\trunk\d.net.compiler\Debug\impcnvgen.lib" /MACHINE:X86 /SAFESEH Debug\impcnvgen.obj
+         impcnvgen.vcxproj -> C:\unity4d\dnet\trunk\d.net.compiler\Debug\impcnvgen.exe
+       PostBuildEvent:
+         "C:\unity4d\dnet\trunk\d.net.compiler\Debug\impcnvgen.exe"
+         :VCEnd
+     1>プロジェクト "C:\unity4d\dnet\trunk\impcnvgen\impcnvgen.vcxproj" (Build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:00.75

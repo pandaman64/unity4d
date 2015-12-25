@@ -1,0 +1,4 @@
+void main() {
+   double a[] = [0.0, 1.1, 2.2, 3.3];
+   assert(a[1..$].length == 3);
+}

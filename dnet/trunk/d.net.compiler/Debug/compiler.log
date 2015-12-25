@@ -1,0 +1,245 @@
+﻿2015/12/24 13:22:10 にビルドを開始しました。
+     1>ノード 3 上のプロジェクト "C:\unity4d\dnet\trunk\d.net.compiler\compiler.vcxproj" (Build ターゲット)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /IC:\unity4d\dnet\trunk\d.net.compiler\ /IC:\unity4d\dnet\trunk\d.net.compiler\..\dmd /Zi /nologo /W2 /WX- /Od /Oy- /D _DH /D TARGET_NET /D VALUETYPE_STRUCT /D DEBUG_TO_SCREEN /D _MBCS /Gm- /EHsc /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt ..\dmd\access.c ..\dmd\aliasthis.c ..\dmd\array.c ..\dmd\arrayop.c ..\dmd\async.c ..\dmd\attrib.c ..\dmd\backend.net\asm.cpp ..\dmd\backend.net\backend.cpp ..\dmd\backend.net\block.cpp ..\dmd\backend.net\cv.cpp ..\dmd\backend.net\decl.cpp ..\dmd\backend.net\dt.cpp ..\dmd\backend.net\elem.cpp ..\dmd\backend.net\hiddenmethod.cpp ..\dmd\backend.net\indentable.cpp ..\dmd\backend.net\irstate.cpp ..\dmd\backend.net\irstatecall.cpp ..\dmd\backend.net\library.cpp ..\dmd\backend.net\link.cpp ..\dmd\backend.net\modemit.cpp ..\dmd\backend.net\msil\aggr.cpp ..\dmd\backend.net\msil\arraylen.cpp ..\dmd\backend.net\msil\arraytype.cpp ..\dmd\backend.net\msil\assembly.cpp ..\dmd\backend.net\msil\assocarray.cpp ..\dmd\backend.net\msil\assocarrayutil.cpp ..\dmd\backend.net\msil\classemit.cpp ..\dmd\backend.net\msil\const.cpp ..\dmd\backend.net\msil\delegatetype.cpp ..\dmd\backend.net\msil\deref.cpp ..\dmd\backend.net\msil\enumemit.cpp ..\dmd\backend.net\msil\except.cpp ..\dmd\backend.net\msil\instruction.cpp ..\dmd\backend.net\msil\label.cpp ..\dmd\backend.net\msil\member.cpp ..\dmd\backend.net\msil\slice.cpp ..\dmd\backend.net\msil\structemit.cpp ..\dmd\backend.net\msil\typedef.cpp ..\dmd\backend.net\msil\types.cpp ..\dmd\backend.net\msil\varargs.cpp ..\dmd\backend.net\msil\variable.cpp ..\dmd\backend.net\objfile.cpp ..\dmd\backend.net\partialresult.cpp ..\dmd\backend.net\symbol.cpp ..\dmd\backend.net\toir.cpp ..\dmd\backend.net\type.cpp ..\dmd\builtin.c ..\dmd\cast.c ..\dmd\class.c ..\dmd\clone.c ..\dmd\cond.c ..\dmd\constfold.c ..\dmd\dchar.c ..\dmd\declaration.c ..\dmd\delegatize.c ..\dmd\doc.c ..\dmd\dsymbol.c ..\dmd\dump.c ..\dmd\entity.c ..\dmd\enum.c ..\dmd\expression.c ..\dmd\frontend.net\externassembly.cpp ..\dmd\frontend.net\pragma.cpp ..\dmd\func.c ..\dmd\funcvargs.cpp ..\dmd\hdrgen.c ..\dmd\html.c ..\dmd\identifier.c ..\dmd\import.c ..\dmd\init.c ..\dmd\inline.c ..\dmd\interpret.c ..\dmd\lexer.c ..\dmd\lstring.c ..\dmd\macro.c ..\dmd\man.c ..\dmd\mangle.c ..\dmd\mars.c ..\dmd\mem.c ..\dmd\module.c ..\dmd\mtype.c ..\dmd\opover.c ..\dmd\optimize.c ..\dmd\parse.c ..\dmd\port.c ..\dmd\response.c ..\dmd\root.c ..\dmd\scope.c ..\dmd\statement.c ..\dmd\staticassert.c ..\dmd\stringtable.c ..\dmd\struct.c ..\dmd\template.c ..\dmd\traits.c ..\dmd\typinf.c ..\dmd\unialpha.c ..\dmd\utf.c ..\dmd\version.c id.cpp impcnvtab.cpp
+         access.c
+         aliasthis.c
+         array.c
+         arrayop.c
+         async.c
+         attrib.c
+     1>..\dmd\attrib.c(875): warning C4477: 'fprintf' : format string '%.*s' requires an argument of type 'char *', but variadic argument 2 has type 'void *'
+         ..\dmd\attrib.c(875): note: this argument is used by a conversion specifier
+         asm.cpp
+         backend.cpp
+         block.cpp
+         cv.cpp
+         decl.cpp
+         dt.cpp
+         elem.cpp
+         hiddenmethod.cpp
+         indentable.cpp
+         irstate.cpp
+         irstatecall.cpp
+         library.cpp
+         link.cpp
+         modemit.cpp
+         コードを生成中...
+         コンパイル中...
+         aggr.cpp
+         arraylen.cpp
+         arraytype.cpp
+         assembly.cpp
+         assocarray.cpp
+         assocarrayutil.cpp
+         classemit.cpp
+         const.cpp
+     1>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xutility(2230): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xutility(2216): note: 'std::_Copy_impl' の宣言を確認してください
+         ..\dmd\backend.net\msil\const.cpp(97): note: コンパイル対象の関数 テンプレート インスタンス化 '_OutIt std::copy<const wchar_t*,wchar_t*>(_InIt,_InIt,_OutIt)' のリファレンスを確認してください
+                 with
+                 [
+                     _OutIt=wchar_t *,
+                     _InIt=const wchar_t *
+                 ]
+         delegatetype.cpp
+         deref.cpp
+         enumemit.cpp
+         except.cpp
+         instruction.cpp
+         label.cpp
+         member.cpp
+         slice.cpp
+         structemit.cpp
+         typedef.cpp
+         types.cpp
+         varargs.cpp
+         コードを生成中...
+         コンパイル中...
+         variable.cpp
+         objfile.cpp
+         partialresult.cpp
+         symbol.cpp
+         toir.cpp
+         type.cpp
+         builtin.c
+         cast.c
+         class.c
+         clone.c
+         cond.c
+         constfold.c
+     1>..\dmd\constfold.c(98): warning C4146: 符号付きの値を代入する変数は、符号付き型にキャストしなければなりません。
+         dchar.c
+         declaration.c
+         delegatize.c
+         doc.c
+     1>c:\unity4d\dnet\trunk\dmd\module.h(24): warning C4099: 'Macro': タイプ名は最初 'class' として使われていましたが 'struct' として使われています。
+         c:\unity4d\dnet\trunk\dmd\macro.h(23): note: 'Macro' の宣言を確認してください
+         dsymbol.c
+         dump.c
+         entity.c
+         enum.c
+         コードを生成中...
+         コンパイル中...
+         expression.c
+     1>..\dmd\expression.c(1584): warning C4146: 符号付きの値を代入する変数は、符号付き型にキャストしなければなりません。
+     1>..\dmd\expression.c(5257): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'void *'
+         externassembly.cpp
+         pragma.cpp
+         func.c
+         funcvargs.cpp
+         hdrgen.c
+         html.c
+         identifier.c
+         import.c
+         init.c
+         inline.c
+         interpret.c
+         lexer.c
+         lstring.c
+         macro.c
+         man.c
+         mangle.c
+         mars.c
+         mem.c
+         module.c
+         コードを生成中...
+         コンパイル中...
+         mtype.c
+         opover.c
+         optimize.c
+         parse.c
+         port.c
+     1>..\dmd\port.c(209): warning C4005: 'ULLONG_MAX': マクロが再定義されました。
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\limits.h(42): note: 'ULLONG_MAX' の以前の定義を確認してください
+         response.c
+         root.c
+         scope.c
+         statement.c
+     1>..\dmd\statement.c(2356): warning C4477: 'fprintf' : format string '%.*s' requires an argument of type 'char *', but variadic argument 2 has type 'void *'
+         ..\dmd\statement.c(2356): note: this argument is used by a conversion specifier
+         staticassert.c
+         stringtable.c
+         struct.c
+         template.c
+         traits.c
+         typinf.c
+         unialpha.c
+         utf.c
+         version.c
+         id.cpp
+         impcnvtab.cpp
+         コードを生成中...
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /IC:\unity4d\dnet\trunk\d.net.compiler\ /IC:\unity4d\dnet\trunk\d.net.compiler\..\dmd /Zi /nologo /W2 /WX- /Od /Oy- /D _DH /D TARGET_NET /D VALUETYPE_STRUCT /D DEBUG_TO_SCREEN /D _MBCS /Gm- /EHsc /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\expr1.obj" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt ..\dmd\backend.net\expr.cpp
+         expr.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /IC:\unity4d\dnet\trunk\d.net.compiler\ /IC:\unity4d\dnet\trunk\d.net.compiler\..\dmd /Zi /nologo /W2 /WX- /Od /Oy- /D _DH /D TARGET_NET /D VALUETYPE_STRUCT /D DEBUG_TO_SCREEN /D _MBCS /Gm- /EHsc /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt ..\dmd\inifile.c
+         inifile.c
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\unity4d\dnet\trunk\d.net.compiler\Debug\dnet.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\unity4d\dnet\trunk\d.net.compiler\Debug\dnet.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"C:\unity4d\dnet\trunk\d.net.compiler\Debug\dnet.lib" /MACHINE:X86 /SAFESEH Debug\access.obj
+         Debug\aliasthis.obj
+         Debug\array.obj
+         Debug\arrayop.obj
+         Debug\async.obj
+         Debug\attrib.obj
+         Debug\asm.obj
+         Debug\backend.obj
+         Debug\block.obj
+         Debug\cv.obj
+         Debug\decl.obj
+         Debug\dt.obj
+         Debug\elem.obj
+         Debug\hiddenmethod.obj
+         Debug\indentable.obj
+         Debug\irstate.obj
+         Debug\irstatecall.obj
+         Debug\library.obj
+         Debug\link.obj
+         Debug\modemit.obj
+         Debug\aggr.obj
+         Debug\arraylen.obj
+         Debug\arraytype.obj
+         Debug\assembly.obj
+         Debug\assocarray.obj
+         Debug\assocarrayutil.obj
+         Debug\classemit.obj
+         Debug\const.obj
+         Debug\delegatetype.obj
+         Debug\deref.obj
+         Debug\enumemit.obj
+         Debug\except.obj
+         Debug\instruction.obj
+         Debug\label.obj
+         Debug\member.obj
+         Debug\slice.obj
+         Debug\structemit.obj
+         Debug\typedef.obj
+         Debug\types.obj
+         Debug\varargs.obj
+         Debug\variable.obj
+         Debug\objfile.obj
+         Debug\partialresult.obj
+         Debug\symbol.obj
+         Debug\toir.obj
+         Debug\type.obj
+         Debug\builtin.obj
+         Debug\cast.obj
+         Debug\class.obj
+         Debug\clone.obj
+         Debug\cond.obj
+         Debug\constfold.obj
+         Debug\dchar.obj
+         Debug\declaration.obj
+         Debug\delegatize.obj
+         Debug\doc.obj
+         Debug\dsymbol.obj
+         Debug\dump.obj
+         Debug\entity.obj
+         Debug\enum.obj
+         Debug\expression.obj
+         Debug\externassembly.obj
+         Debug\pragma.obj
+         Debug\func.obj
+         Debug\funcvargs.obj
+         Debug\hdrgen.obj
+         Debug\html.obj
+         Debug\identifier.obj
+         Debug\import.obj
+         Debug\inifile.obj
+         Debug\init.obj
+         Debug\inline.obj
+         Debug\interpret.obj
+         Debug\lexer.obj
+         Debug\lstring.obj
+         Debug\macro.obj
+         Debug\man.obj
+         Debug\mangle.obj
+         Debug\mars.obj
+         Debug\mem.obj
+         Debug\module.obj
+         Debug\mtype.obj
+         Debug\opover.obj
+         Debug\optimize.obj
+         Debug\parse.obj
+         Debug\port.obj
+         Debug\response.obj
+         Debug\root.obj
+         Debug\scope.obj
+         Debug\statement.obj
+         Debug\staticassert.obj
+         Debug\stringtable.obj
+         Debug\struct.obj
+         Debug\template.obj
+         Debug\traits.obj
+         Debug\typinf.obj
+         Debug\unialpha.obj
+         Debug\utf.obj
+         Debug\version.obj
+         Debug\id.obj
+         Debug\impcnvtab.obj
+         Debug\expr1.obj
+         compiler.vcxproj -> C:\unity4d\dnet\trunk\d.net.compiler\Debug\dnet.exe
+     1>プロジェクト "C:\unity4d\dnet\trunk\d.net.compiler\compiler.vcxproj" (Build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:42.29

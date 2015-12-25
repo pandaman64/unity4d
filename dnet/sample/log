@@ -1,0 +1,23 @@
+//--------------------------------------------------------------
+// C:\unity4d\dnet\sample\test.d compiled: Fri Dec 25 07:54:29 2015
+//--------------------------------------------------------------
+.assembly extern 'UnityEngine' {}
+.assembly extern 'mscorlib' {}
+.assembly extern dnetlib {}
+.assembly 'test' {}
+.module 'test'
+
+
+.class public auto 'test.DBehaviour' extends [UnityEngine]UnityEngine.MonoBehaviour
+{
+  .method public hidebysig instance void .ctor ()
+  {
+    .maxstack 2
+    // no .ctor guard
+    ldarg.0	// 'this' (class 'test.DBehaviour')
+    call instance void [UnityEngine]UnityEngine.MonoBehaviour::.ctor ()
+    ret
+  }
+  .field bool '$in_ctor'
+} // end of 'test.DBehaviour'
+
