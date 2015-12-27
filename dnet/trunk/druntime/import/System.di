@@ -570,8 +570,8 @@ class ValueType : Object{
 }
 class Version : Object{
 }
-class Void : ValueType{
-}
+/*class Void : ValueType{
+}*/
 class WeakReference : Object{
 }
 class ThreadStaticAttribute : Attribute{
