@@ -27,29 +27,29 @@ namespace NetToD
                     {
                         return "__UnityObject";
                     }
-                    if (type.FullName == "System.Object")
+                    if (type.FullName == "UnityEngine.Object[]")
                     {
-                        return "__object";
+                        return "__UnityObject[]";
                     }
-                    //後で何とかする
-                    if (type.FullName == "System.Object[]")
-                    {
-                        return "__object[]";
-                    }
-                    return type.Name;
+                    return type.JaggedArrayDName(false/*Name*/);
             }
         }
 
         //jagged array
-        static int GetElementCount(Type type)
+        static string JaggedArrayDName(this Type type, bool isfull)
         {
-            int count;
+            int count = 0;
+            Type arraytype = type;
             while(type.GetElementType() != null)
             {
                 count++;
                 type = type.GetElementType();
             }
-            return count;
+            if (type.FullName != "System.Object")
+            {
+                return isfull ? arraytype.FullName : arraytype.Name;
+            }
+            return "__object" + string.Concat(Enumerable.Repeat("[]", count));
         }
         static string DFullName(this Type type)
         {
@@ -57,16 +57,12 @@ namespace NetToD
             {
                 return "UnityEngine.__UnityObject";
             }
-            if (type.FullName == "System.Object")
+            if (type.FullName == "UnityEngine.Object[]")
             {
-                return "__object";
-            }
-            if (type.FullName == "System.Object[]")
-            {
-                return "__object[]";
+                return "UnityEngine.__UnityObject[]";
             }
             //インナークラスは+でつながるので置き換え
-            return type.FullName.Replace('+', '.');
+            return type.JaggedArrayDName(true/*FullName*/).Replace('+', '.');
         }
 
         static string ModuleName(this string @namespace)
