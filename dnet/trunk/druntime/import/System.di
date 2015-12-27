@@ -24,8 +24,9 @@ import System.Runtime.InteropServices;
 
 pragma (assembly, "mscorlib"){
 
-public class __object;
+public class __object{}
 
+alias void Void;
 /*
 alias short Int16;
 alias int Int32;
@@ -35,7 +36,7 @@ alias long Int64;
 alias ulong UInt64;
 alias float Single;
 alias double Double;
-alias void Void;
+//alias void Void;
 alias byte SByte;
 alias ubyte Byte;
 alias bool Boolean;
@@ -45,7 +46,7 @@ public class Enum;
 public struct IntPtr;
 */
 
-public class String
+public class String : __object
 {
 public:
     this(wchar[]);
@@ -569,8 +570,8 @@ class ValueType : Object{
 }
 class Version : Object{
 }
-class Void : ValueType{
-}
+/*class Void : ValueType{
+}*/
 class WeakReference : Object{
 }
 class ThreadStaticAttribute : Attribute{
