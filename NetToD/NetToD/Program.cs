@@ -27,15 +27,43 @@ namespace NetToD
                     {
                         return "__UnityObject";
                     }
+                    if (type.FullName == "System.Object")
+                    {
+                        return "__object";
+                    }
+                    //後で何とかする
+                    if (type.FullName == "System.Object[]")
+                    {
+                        return "__object[]";
+                    }
                     return type.Name;
             }
         }
 
+        //jagged array
+        static int GetElementCount(Type type)
+        {
+            int count;
+            while(type.GetElementType() != null)
+            {
+                count++;
+                type = type.GetElementType();
+            }
+            return count;
+        }
         static string DFullName(this Type type)
         {
             if (type.FullName == "UnityEngine.Object")
             {
                 return "UnityEngine.__UnityObject";
+            }
+            if (type.FullName == "System.Object")
+            {
+                return "__object";
+            }
+            if (type.FullName == "System.Object[]")
+            {
+                return "__object[]";
             }
             //インナークラスは+でつながるので置き換え
             return type.FullName.Replace('+', '.');
