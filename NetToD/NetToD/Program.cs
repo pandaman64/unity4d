@@ -27,42 +27,18 @@ namespace NetToD
                     {
                         return "__UnityObject";
                     }
-                    if (type.FullName == "UnityEngine.Object[]")
-                    {
-                        return "__UnityObject[]";
-                    }
-                    return type.JaggedArrayDName(false/*Name*/);
+                    return type.Name;
             }
         }
 
-        //jagged array
-        static string JaggedArrayDName(this Type type, bool isfull)
-        {
-            int count = 0;
-            Type arraytype = type;
-            while(type.GetElementType() != null)
-            {
-                count++;
-                type = type.GetElementType();
-            }
-            if (type.FullName != "System.Object")
-            {
-                return isfull ? arraytype.FullName : arraytype.Name;
-            }
-            return "__object" + string.Concat(Enumerable.Repeat("[]", count));
-        }
         static string DFullName(this Type type)
         {
             if (type.FullName == "UnityEngine.Object")
             {
                 return "UnityEngine.__UnityObject";
             }
-            if (type.FullName == "UnityEngine.Object[]")
-            {
-                return "UnityEngine.__UnityObject[]";
-            }
             //インナークラスは+でつながるので置き換え
-            return type.JaggedArrayDName(true/*FullName*/).Replace('+', '.');
+            return type.FullName.Replace('+', '.');
         }
 
         static string ModuleName(this string @namespace)
