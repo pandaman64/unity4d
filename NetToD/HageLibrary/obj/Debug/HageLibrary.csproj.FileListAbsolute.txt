@@ -1,8 +1,0 @@
-C:\Users\pan\documents\visual studio 2013\Projects\NetToD\HageLibrary\bin\Debug\HageLibrary.dll
-C:\Users\pan\documents\visual studio 2013\Projects\NetToD\HageLibrary\bin\Debug\HageLibrary.pdb
-C:\Users\pan\documents\visual studio 2013\Projects\NetToD\HageLibrary\obj\Debug\HageLibrary.dll
-C:\Users\pan\documents\visual studio 2013\Projects\NetToD\HageLibrary\obj\Debug\HageLibrary.pdb
-C:\unity4d\NetToD\HageLibrary\bin\Debug\HageLibrary.dll
-C:\unity4d\NetToD\HageLibrary\bin\Debug\HageLibrary.pdb
-C:\unity4d\NetToD\HageLibrary\obj\Debug\HageLibrary.dll
-C:\unity4d\NetToD\HageLibrary\obj\Debug\HageLibrary.pdb
