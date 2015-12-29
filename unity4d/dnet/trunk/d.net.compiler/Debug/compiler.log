@@ -1,0 +1,136 @@
+﻿  Performing Custom Build Tools
+  Microsoft (R) Visual C# Compiler バージョン 1.1.0.51204
+  Copyright (C) Microsoft Corporation. All rights reserved.
+  
+  access.c
+  aliasthis.c
+  array.c
+  arrayop.c
+  async.c
+  attrib.c
+..\dmd\attrib.c(875): warning C4477: 'fprintf' : 書式文字列 '%.*s' には、型 'char *' の引数が必要ですが、可変個引数 2 は型 'void *' です
+  ..\dmd\attrib.c(875): note: この引数は変換指定子で使用されます
+  asm.cpp
+  backend.cpp
+  block.cpp
+  cv.cpp
+  decl.cpp
+  dt.cpp
+  elem.cpp
+  hiddenmethod.cpp
+  indentable.cpp
+  irstate.cpp
+  irstatecall.cpp
+  library.cpp
+  link.cpp
+  modemit.cpp
+  コードを生成中...
+  コンパイル中...
+  aggr.cpp
+  arraylen.cpp
+  arraytype.cpp
+  assembly.cpp
+  assocarray.cpp
+  assocarrayutil.cpp
+  classemit.cpp
+  const.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xutility(2229): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xutility(2216): note: 'std::_Copy_impl' の宣言を確認してください
+  ..\dmd\backend.net\msil\const.cpp(97): note: コンパイル対象の関数 テンプレート インスタンス化 '_OutIt std::copy<const wchar_t*,wchar_t*>(_InIt,_InIt,_OutIt)' のリファレンスを確認してください
+          with
+          [
+              _OutIt=wchar_t *,
+              _InIt=const wchar_t *
+          ]
+  delegatetype.cpp
+  deref.cpp
+  enumemit.cpp
+  except.cpp
+  instruction.cpp
+  label.cpp
+  member.cpp
+  slice.cpp
+  structemit.cpp
+  typedef.cpp
+  types.cpp
+  varargs.cpp
+  コードを生成中...
+  コンパイル中...
+  variable.cpp
+  objfile.cpp
+  partialresult.cpp
+  symbol.cpp
+  toir.cpp
+  type.cpp
+  builtin.c
+  cast.c
+  class.c
+  clone.c
+  cond.c
+  constfold.c
+..\dmd\constfold.c(98): warning C4146: 符号付きの値を代入する変数は、符号付き型にキャストしなければなりません。
+  dchar.c
+  declaration.c
+  delegatize.c
+  doc.c
+d:\pan\unity4d\unity4d\dnet\trunk\dmd\module.h(24): warning C4099: 'Macro': タイプ名は最初 'class' として使われていましたが 'struct' として使われています。
+  d:\pan\unity4d\unity4d\dnet\trunk\dmd\macro.h(23): note: 'Macro' の宣言を確認してください
+  dsymbol.c
+  dump.c
+  entity.c
+  enum.c
+  コードを生成中...
+  コンパイル中...
+  expression.c
+..\dmd\expression.c(1584): warning C4146: 符号付きの値を代入する変数は、符号付き型にキャストしなければなりません。
+..\dmd\expression.c(5257): warning C4477: 'printf' : 書式文字列 '%s' には、型 'char *' の引数が必要ですが、可変個引数 1 は型 'void *' です
+  externassembly.cpp
+  pragma.cpp
+  func.c
+  funcvargs.cpp
+  hdrgen.c
+  html.c
+  identifier.c
+  import.c
+  init.c
+  inline.c
+  interpret.c
+  lexer.c
+  lstring.c
+  macro.c
+  man.c
+  mangle.c
+  mars.c
+  mem.c
+  module.c
+  コードを生成中...
+  コンパイル中...
+  mtype.c
+  opover.c
+  optimize.c
+  parse.c
+  port.c
+..\dmd\port.c(209): warning C4005: 'ULLONG_MAX': マクロが再定義されました。
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\limits.h(42): note: 'ULLONG_MAX' の以前の定義を確認してください
+  response.c
+  root.c
+  scope.c
+  statement.c
+..\dmd\statement.c(2356): warning C4477: 'fprintf' : 書式文字列 '%.*s' には、型 'char *' の引数が必要ですが、可変個引数 2 は型 'void *' です
+  ..\dmd\statement.c(2356): note: この引数は変換指定子で使用されます
+  staticassert.c
+  stringtable.c
+  struct.c
+  template.c
+  traits.c
+  typinf.c
+  unialpha.c
+  utf.c
+  version.c
+  id.cpp
+  impcnvtab.cpp
+  コードを生成中...
+  expr.cpp
+  inifile.c
+  compiler.vcxproj -> D:\pan\unity4d\unity4d\dnet\Debug\dnet.exe
+          1 file(s) copied.

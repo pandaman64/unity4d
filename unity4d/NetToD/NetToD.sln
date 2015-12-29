@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetToD", "NetToD\NetToD.csproj", "{E3FD42F9-FBAC-45F6-B66E-61A52C7A476F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HageLibrary", "HageLibrary\HageLibrary.csproj", "{60CCAE99-614D-4998-9176-C09183886A3E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3FD42F9-FBAC-45F6-B66E-61A52C7A476F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3FD42F9-FBAC-45F6-B66E-61A52C7A476F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3FD42F9-FBAC-45F6-B66E-61A52C7A476F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3FD42F9-FBAC-45F6-B66E-61A52C7A476F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60CCAE99-614D-4998-9176-C09183886A3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60CCAE99-614D-4998-9176-C09183886A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60CCAE99-614D-4998-9176-C09183886A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60CCAE99-614D-4998-9176-C09183886A3E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

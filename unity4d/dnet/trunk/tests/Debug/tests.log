@@ -1,0 +1,8 @@
+﻿  root.c
+  mem.c
+  test.cpp
+  smoketest.cpp
+  array.c
+  コードを生成中...
+array.obj : warning LNK4075: /EDITANDCONTINUE は /SAFESEH の指定によって無視されます。
+  tests.vcxproj -> D:\pan\unity4d\unity4d\dnet\Debug\tests.exe
