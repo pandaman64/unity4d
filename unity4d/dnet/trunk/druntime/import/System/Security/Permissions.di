@@ -7,6 +7,7 @@ import System.Security.Cryptography.X509Certificates;
 public:
 pragma(assembly,"mscorlib"){
 class EnvironmentPermissionAccess : System.Enum{
+Int32 value__;
 }
 class EnvironmentPermission : System.Security.CodeAccessPermission{
 this (System.Security.Permissions.PermissionState);
@@ -23,6 +24,7 @@ System.Security.SecurityElement ToXml();
 System.Void FromXml(System.Security.SecurityElement);
 }
 class FileDialogPermissionAccess : System.Enum{
+Int32 value__;
 }
 class FileDialogPermission : System.Security.CodeAccessPermission{
 this (System.Security.Permissions.PermissionState);
@@ -38,6 +40,7 @@ System.Security.SecurityElement ToXml();
 System.Security.IPermission Union(System.Security.IPermission);
 }
 class FileIOPermissionAccess : System.Enum{
+Int32 value__;
 }
 class FileIOPermission : System.Security.CodeAccessPermission{
 this (System.Security.Permissions.PermissionState);
@@ -65,6 +68,7 @@ System.Boolean Equals(System.__object);
 System.Int32 GetHashCode();
 }
 class HostProtectionResource : System.Enum{
+Int32 value__;
 }
 class HostProtectionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute{
 this ();
@@ -92,6 +96,7 @@ System.Void set_MayLeakOnAbort(System.Boolean);
 System.Security.IPermission CreatePermission();
 }
 class IsolatedStorageContainment : System.Enum{
+Int32 value__;
 }
 class IsolatedStoragePermission : System.Security.CodeAccessPermission{
 System.Void FromXml(System.Security.SecurityElement);
@@ -111,8 +116,10 @@ System.Security.IPermission Intersect(System.Security.IPermission);
 System.Security.IPermission Copy();
 }
 class PermissionState : System.Enum{
+Int32 value__;
 }
 class SecurityAction : System.Enum{
+Int32 value__;
 }
 class SecurityAttribute : System.Attribute{
 System.Security.Permissions.SecurityAction get_Action();
@@ -329,6 +336,7 @@ System.Security.IPermission CreatePermission();
 System.Security.PermissionSet CreatePermissionSet();
 }
 class ReflectionPermissionFlag : System.Enum{
+Int32 value__;
 }
 class ReflectionPermission : System.Security.CodeAccessPermission{
 this (System.Security.Permissions.PermissionState);
@@ -360,6 +368,7 @@ System.Void FromXml(System.Security.SecurityElement);
 System.String ToString();
 }
 class SecurityPermissionFlag : System.Enum{
+Int32 value__;
 }
 class SecurityPermission : System.Security.CodeAccessPermission{
 this (System.Security.Permissions.PermissionState);
@@ -409,8 +418,10 @@ System.Int32 GetHashCode();
 System.String ToString();
 }
 class UIPermissionWindow : System.Enum{
+Int32 value__;
 }
 class UIPermissionClipboard : System.Enum{
+Int32 value__;
 }
 class UIPermission : System.Security.CodeAccessPermission{
 this (System.Security.Permissions.PermissionState);
@@ -471,6 +482,7 @@ interface IUnrestrictedPermission{
 System.Boolean IsUnrestricted();
 }
 class KeyContainerPermissionFlags : System.Enum{
+Int32 value__;
 }
 class KeyContainerPermissionAccessEntry : System.__object{
 this (System.String,System.Security.Permissions.KeyContainerPermissionFlags);
@@ -535,6 +547,7 @@ System.Void FromXml(System.Security.SecurityElement);
 System.Security.SecurityElement ToXml();
 }
 class RegistryPermissionAccess : System.Enum{
+Int32 value__;
 }
 class RegistryPermission : System.Security.CodeAccessPermission{
 this (System.Security.Permissions.PermissionState);

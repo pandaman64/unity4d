@@ -218,10 +218,13 @@ this ();
 System.Reflection.AssemblyName GetAssemblyName(System.String);
 }
 class AssemblyNameFlags : System.Enum{
+Int32 value__;
 }
 class AssemblyContentType : System.Enum{
+Int32 value__;
 }
 class ProcessorArchitecture : System.Enum{
+Int32 value__;
 }
 class CustomAttributeExtensions : System.__object{
 static System.Attribute GetCustomAttribute(System.Reflection.Assembly,System.Type);
@@ -244,8 +247,10 @@ System.Reflection.PropertyInfo SelectProperty(System.Reflection.BindingFlags,Sys
 System.__object ChangeType(System.__object,System.Type,System.Globalization.CultureInfo);
 }
 class BindingFlags : System.Enum{
+Int32 value__;
 }
 class CallingConventions : System.Enum{
+Int32 value__;
 }
 class ConstructorInfo : System.Reflection.MethodBase{
 static System.Boolean op_Equality(System.Reflection.ConstructorInfo,System.Reflection.ConstructorInfo);
@@ -292,6 +297,7 @@ this (System.String);
 System.String get_MemberName();
 }
 class EventAttributes : System.Enum{
+Int32 value__;
 }
 class EventInfo : System.Reflection.MemberInfo{
 static System.Boolean op_Equality(System.Reflection.EventInfo,System.Reflection.EventInfo);
@@ -318,6 +324,7 @@ System.Boolean get_IsSpecialName();
 System.Boolean get_IsMulticast();
 }
 class FieldAttributes : System.Enum{
+Int32 value__;
 }
 class FieldInfo : System.Reflection.MemberInfo{
 static System.Reflection.FieldInfo GetFieldFromHandle(System.RuntimeFieldHandle);
@@ -355,6 +362,7 @@ System.Boolean get_IsSecuritySafeCritical();
 System.Boolean get_IsSecurityTransparent();
 }
 class GenericParameterAttributes : System.Enum{
+Int32 value__;
 }
 interface ICustomAttributeProvider{
 System.__object[] GetCustomAttributes(System.Type,System.Boolean);
@@ -374,6 +382,10 @@ static System.Reflection.MethodInfo GetRuntimeBaseDefinition(System.Reflection.M
 static System.Reflection.MethodInfo GetMethodInfo(System.Delegate);
 }
 class InterfaceMapping : System.ValueType{
+Type TargetType;
+Type InterfaceType;
+MethodInfo[] TargetMethods;
+MethodInfo[] InterfaceMethods;
 }
 interface IReflect{
 System.Reflection.MethodInfo GetMethod(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type[],System.Reflection.ParameterModifier[]);
@@ -396,6 +408,7 @@ System.String get_FileName();
 System.Reflection.ResourceLocation get_ResourceLocation();
 }
 class ResourceLocation : System.Enum{
+Int32 value__;
 }
 class MemberFilter : System.MulticastDelegate{
 this (System.__object,System.IntPtr);
@@ -419,8 +432,10 @@ System.Boolean Equals(System.__object);
 System.Int32 GetHashCode();
 }
 class MemberTypes : System.Enum{
+Int32 value__;
 }
 class MethodAttributes : System.Enum{
+Int32 value__;
 }
 class MethodBase : System.Reflection.MemberInfo{
 static System.Reflection.MethodBase GetMethodFromHandle(System.RuntimeMethodHandle);
@@ -461,6 +476,7 @@ System.Boolean get_IsConstructor();
 System.Reflection.MethodBody GetMethodBody();
 }
 class MethodImplAttributes : System.Enum{
+Int32 value__;
 }
 class MethodInfo : System.Reflection.MethodBase{
 static System.Boolean op_Equality(System.Reflection.MethodInfo,System.Reflection.MethodInfo);
@@ -481,8 +497,10 @@ System.Delegate CreateDelegate(System.Type,System.__object);
 class Missing : System.__object{
 }
 class PortableExecutableKinds : System.Enum{
+Int32 value__;
 }
 class ImageFileMachine : System.Enum{
+Int32 value__;
 }
 class Module : System.__object{
 static System.Boolean op_Equality(System.Reflection.Module,System.Reflection.Module);
@@ -547,6 +565,7 @@ System.String get_Feature();
 System.Void set_Feature(System.String);
 }
 class ExceptionHandlingClauseOptions : System.Enum{
+Int32 value__;
 }
 class ExceptionHandlingClause : System.__object{
 System.Reflection.ExceptionHandlingClauseOptions get_Flags();
@@ -571,6 +590,7 @@ System.Boolean get_IsPinned();
 System.Int32 get_LocalIndex();
 }
 class ParameterAttributes : System.Enum{
+Int32 value__;
 }
 class ParameterInfo : System.__object{
 System.Type get_ParameterType();
@@ -603,6 +623,7 @@ System.Void set_Item(System.Int32,System.Boolean);
 class Pointer : System.__object{
 }
 class PropertyAttributes : System.Enum{
+Int32 value__;
 }
 class PropertyInfo : System.Reflection.MemberInfo{
 static System.Boolean op_Equality(System.Reflection.PropertyInfo,System.Reflection.PropertyInfo);
@@ -639,6 +660,7 @@ class ReflectionContext : System.__object{
 System.Reflection.Assembly MapAssembly(System.Reflection.Assembly);
 }
 class ResourceAttributes : System.Enum{
+Int32 value__;
 }
 class StrongNameKeyPair : System.__object{
 this (System.IO.FileStream);
@@ -647,6 +669,7 @@ this (System.String);
 System.Byte[] get_PublicKey();
 }
 class TypeAttributes : System.Enum{
+Int32 value__;
 }
 class TypeFilter : System.MulticastDelegate{
 this (System.__object,System.IntPtr);

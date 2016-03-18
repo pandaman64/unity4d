@@ -94,6 +94,7 @@ System.IO.Stream GetRequestStream(System.Runtime.Remoting.Messaging.IMessage,Sys
 System.Runtime.Remoting.Channels.IClientChannelSink get_NextChannelSink();
 }
 class ServerProcessing : System.Enum{
+Int32 value__;
 }
 interface IServerChannelSink{
 System.Void AsyncProcessResponse(System.Runtime.Remoting.Channels.IServerResponseChannelSinkStack,System.__object,System.Runtime.Remoting.Messaging.IMessage,System.Runtime.Remoting.Channels.ITransportHeaders,System.IO.Stream);

@@ -1,136 +1,197 @@
-﻿  Performing Custom Build Tools
-  Microsoft (R) Visual C# Compiler バージョン 1.1.0.51204
-  Copyright (C) Microsoft Corporation. All rights reserved.
-  
-  access.c
+﻿  access.c
+..\dmd\access.c(11): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   aliasthis.c
+..\dmd\aliasthis.c(11): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   array.c
+..\dmd\array.c(10): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   arrayop.c
+..\dmd\arrayop.c(10): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   async.c
+..\dmd\async.c(4): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   attrib.c
-..\dmd\attrib.c(875): warning C4477: 'fprintf' : 書式文字列 '%.*s' には、型 'char *' の引数が必要ですが、可変個引数 2 は型 'void *' です
-  ..\dmd\attrib.c(875): note: この引数は変換指定子で使用されます
+..\dmd\attrib.c(11): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   asm.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   backend.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   block.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   cv.cpp
+d:\pan\unity4d\unity4d\dnet\trunk\dmd\root.h(14): fatal error C1083: include ファイルを開けません。'stdlib.h':No such file or directory
   decl.cpp
+d:\pan\unity4d\unity4d\dnet\trunk\dmd\root.h(14): fatal error C1083: include ファイルを開けません。'stdlib.h':No such file or directory
   dt.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   elem.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   hiddenmethod.cpp
+d:\pan\unity4d\unity4d\dnet\trunk\dmd\root.h(14): fatal error C1083: include ファイルを開けません。'stdlib.h':No such file or directory
   indentable.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   irstate.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   irstatecall.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   library.cpp
+D:\pan\unity4d\unity4d\dnet\trunk\dmd\root.h(14): fatal error C1083: include ファイルを開けません。'stdlib.h':No such file or directory
   link.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   modemit.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   コードを生成中...
   コンパイル中...
   aggr.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   arraylen.cpp
+d:\pan\unity4d\unity4d\dnet\trunk\dmd\root.h(14): fatal error C1083: include ファイルを開けません。'stdlib.h':No such file or directory
   arraytype.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   assembly.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   assocarray.cpp
+d:\pan\unity4d\unity4d\dnet\trunk\dmd\root.h(14): fatal error C1083: include ファイルを開けません。'stdlib.h':No such file or directory
   assocarrayutil.cpp
+d:\pan\unity4d\unity4d\dnet\trunk\dmd\root.h(14): fatal error C1083: include ファイルを開けません。'stdlib.h':No such file or directory
   classemit.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   const.cpp
-C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xutility(2229): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xutility(2216): note: 'std::_Copy_impl' の宣言を確認してください
-  ..\dmd\backend.net\msil\const.cpp(97): note: コンパイル対象の関数 テンプレート インスタンス化 '_OutIt std::copy<const wchar_t*,wchar_t*>(_InIt,_InIt,_OutIt)' のリファレンスを確認してください
-          with
-          [
-              _OutIt=wchar_t *,
-              _InIt=const wchar_t *
-          ]
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   delegatetype.cpp
+d:\pan\unity4d\unity4d\dnet\trunk\dmd\root.h(14): fatal error C1083: include ファイルを開けません。'stdlib.h':No such file or directory
   deref.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   enumemit.cpp
+d:\pan\unity4d\unity4d\dnet\trunk\dmd\root.h(14): fatal error C1083: include ファイルを開けません。'stdlib.h':No such file or directory
   except.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   instruction.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   label.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   member.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   slice.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   structemit.cpp
+d:\pan\unity4d\unity4d\dnet\trunk\dmd\root.h(14): fatal error C1083: include ファイルを開けません。'stdlib.h':No such file or directory
   typedef.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   types.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   varargs.cpp
+d:\pan\unity4d\unity4d\dnet\trunk\dmd\root.h(14): fatal error C1083: include ファイルを開けません。'stdlib.h':No such file or directory
   コードを生成中...
   コンパイル中...
   variable.cpp
+d:\pan\unity4d\unity4d\dnet\trunk\dmd\root.h(14): fatal error C1083: include ファイルを開けません。'stdlib.h':No such file or directory
   objfile.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   partialresult.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   symbol.cpp
+d:\pan\unity4d\unity4d\dnet\trunk\dmd\root.h(14): fatal error C1083: include ファイルを開けません。'stdlib.h':No such file or directory
   toir.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   type.cpp
+d:\pan\unity4d\unity4d\dnet\trunk\dmd\root.h(14): fatal error C1083: include ファイルを開けません。'stdlib.h':No such file or directory
   builtin.c
+..\dmd\builtin.c(11): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   cast.c
+..\dmd\cast.c(10): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   class.c
+..\dmd\class.c(11): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   clone.c
+..\dmd\clone.c(11): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   cond.c
+..\dmd\cond.c(11): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   constfold.c
-..\dmd\constfold.c(98): warning C4146: 符号付きの値を代入する変数は、符号付き型にキャストしなければなりません。
+..\dmd\constfold.c(11): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   dchar.c
+..\dmd\dchar.c(11): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   declaration.c
+..\dmd\declaration.c(11): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   delegatize.c
+..\dmd\delegatize.c(11): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   doc.c
-d:\pan\unity4d\unity4d\dnet\trunk\dmd\module.h(24): warning C4099: 'Macro': タイプ名は最初 'class' として使われていましたが 'struct' として使われています。
-  d:\pan\unity4d\unity4d\dnet\trunk\dmd\macro.h(23): note: 'Macro' の宣言を確認してください
+..\dmd\doc.c(13): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   dsymbol.c
+..\dmd\dsymbol.c(11): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   dump.c
+..\dmd\dump.c(11): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   entity.c
+..\dmd\entity.c(11): fatal error C1083: include ファイルを開けません。'string.h':No such file or directory
   enum.c
+..\dmd\enum.c(10): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   コードを生成中...
   コンパイル中...
   expression.c
-..\dmd\expression.c(1584): warning C4146: 符号付きの値を代入する変数は、符号付き型にキャストしなければなりません。
-..\dmd\expression.c(5257): warning C4477: 'printf' : 書式文字列 '%s' には、型 'char *' の引数が必要ですが、可変個引数 1 は型 'void *' です
+..\dmd\expression.c(11): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   externassembly.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   pragma.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   func.c
+..\dmd\func.c(10): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   funcvargs.cpp
+..\dmd\funcvargs.cpp(35): fatal error C1083: include ファイルを開けません。'stdlib.h':No such file or directory
   hdrgen.c
+..\dmd\hdrgen.c(20): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   html.c
+..\dmd\html.c(14): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   identifier.c
+..\dmd\identifier.c(11): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   import.c
+..\dmd\import.c(11): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   init.c
+..\dmd\init.c(11): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   inline.c
+..\dmd\inline.c(14): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   interpret.c
+..\dmd\interpret.c(11): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   lexer.c
+..\dmd\lexer.c(13): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   lstring.c
+..\dmd\lstring.c(11): fatal error C1083: include ファイルを開けません。'stdlib.h':No such file or directory
   macro.c
+..\dmd\macro.c(13): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   man.c
+..\dmd\man.c(11): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   mangle.c
+..\dmd\mangle.c(11): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   mars.c
+..\dmd\mars.c(11): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   mem.c
+..\dmd\mem.c(5): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   module.c
+..\dmd\module.c(11): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   コードを生成中...
   コンパイル中...
   mtype.c
+..\dmd\mtype.c(18): fatal error C1083: include ファイルを開けません。'math.h':No such file or directory
   opover.c
+..\dmd\opover.c(11): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   optimize.c
+..\dmd\optimize.c(11): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   parse.c
+..\dmd\parse.c(13): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   port.c
-..\dmd\port.c(209): warning C4005: 'ULLONG_MAX': マクロが再定義されました。
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\limits.h(42): note: 'ULLONG_MAX' の以前の定義を確認してください
+d:\pan\unity4d\unity4d\dnet\trunk\dmd\port.h(16): fatal error C1083: include ファイルを開けません。'wchar.h':No such file or directory
   response.c
+..\dmd\response.c(12): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   root.c
+..\dmd\root.c(10): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   scope.c
+..\dmd\scope.c(10): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   statement.c
-..\dmd\statement.c(2356): warning C4477: 'fprintf' : 書式文字列 '%.*s' には、型 'char *' の引数が必要ですが、可変個引数 2 は型 'void *' です
-  ..\dmd\statement.c(2356): note: この引数は変換指定子で使用されます
+..\dmd\statement.c(11): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   staticassert.c
+..\dmd\staticassert.c(10): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   stringtable.c
+..\dmd\stringtable.c(11): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   struct.c
+..\dmd\struct.c(11): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   template.c
+..\dmd\template.c(13): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   traits.c
+..\dmd\traits.c(11): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   typinf.c
-  unialpha.c
-  utf.c
-  version.c
-  id.cpp
-  impcnvtab.cpp
-  コードを生成中...
-  expr.cpp
-  inifile.c
-  compiler.vcxproj -> D:\pan\unity4d\unity4d\dnet\Debug\dnet.exe
-          1 file(s) copied.

@@ -4,9 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetToD", "NetToD\NetToD\NetToD.csproj", "{E3FD42F9-FBAC-45F6-B66E-61A52C7A476F}"
-	ProjectSection(ProjectDependencies) = postProject
-		{D5842955-0C3C-4D95-9F3E-142EC6E11BF5} = {D5842955-0C3C-4D95-9F3E-142EC6E11BF5}
-	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "idgen", "dnet\trunk\idgen\idgen.vcxproj", "{6720EC05-6E7C-48CF-A265-ECAB614D84D2}"
 EndProject

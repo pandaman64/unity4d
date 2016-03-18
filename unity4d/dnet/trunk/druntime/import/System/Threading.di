@@ -43,6 +43,7 @@ static System.Threading.CompressedStack GetCompressedStack();
 System.Threading.CompressedStack CreateCopy();
 }
 class EventResetMode : System.Enum{
+Int32 value__;
 }
 class EventWaitHandle : System.Threading.WaitHandle{
 this (System.Boolean,System.Threading.EventResetMode);
@@ -131,6 +132,11 @@ System.Security.AccessControl.MutexSecurity GetAccessControl();
 System.Void SetAccessControl(System.Security.AccessControl.MutexSecurity);
 }
 class NativeOverlapped : System.ValueType{
+IntPtr InternalLow;
+IntPtr InternalHigh;
+Int32 OffsetLow;
+Int32 OffsetHigh;
+IntPtr EventHandle;
 }
 class Overlapped : System.__object{
 this ();
@@ -268,6 +274,7 @@ static System.Boolean BindHandle(System.IntPtr);
 static System.Boolean BindHandle(System.Runtime.InteropServices.SafeHandle);
 }
 class ThreadPriority : System.Enum{
+Int32 value__;
 }
 class ThreadStart : System.MulticastDelegate{
 this (System.__object,System.IntPtr);
@@ -276,6 +283,7 @@ System.IAsyncResult BeginInvoke(System.AsyncCallback,System.__object);
 System.Void EndInvoke(System.IAsyncResult);
 }
 class ThreadState : System.Enum{
+Int32 value__;
 }
 class Timeout : System.__object{
 }
@@ -331,6 +339,7 @@ static Microsoft.Win32.SafeHandles.SafeWaitHandle GetSafeWaitHandle(System.Threa
 static System.Void SetSafeWaitHandle(System.Threading.WaitHandle,Microsoft.Win32.SafeHandles.SafeWaitHandle);
 }
 class ApartmentState : System.Enum{
+Int32 value__;
 }
 class SpinLock : System.ValueType{
 this (System.Boolean);
@@ -369,6 +378,7 @@ System.Boolean Wait(System.Int32);
 System.Boolean Wait(System.Int32,System.Threading.CancellationToken);
 }
 class LazyThreadSafetyMode : System.Enum{
+Int32 value__;
 }
 class LazyInitializer : System.__object{
 }

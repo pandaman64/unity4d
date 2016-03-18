@@ -7,22 +7,31 @@ import System.Reflection;
 public:
 pragma(assembly,"mscorlib"){
 class InheritanceFlags : System.Enum{
+Int32 value__;
 }
 class PropagationFlags : System.Enum{
+Int32 value__;
 }
 class AuditFlags : System.Enum{
+Int32 value__;
 }
 class SecurityInfos : System.Enum{
+Int32 value__;
 }
 class ResourceType : System.Enum{
+Int32 value__;
 }
 class AccessControlSections : System.Enum{
+Int32 value__;
 }
 class AccessControlActions : System.Enum{
+Int32 value__;
 }
 class AceType : System.Enum{
+Byte value__;
 }
 class AceFlags : System.Enum{
+Byte value__;
 }
 class GenericAce : System.__object{
 static System.Security.AccessControl.GenericAce CreateFromBinaryForm(System.Byte[],System.Int32);
@@ -56,6 +65,7 @@ System.Void SetOpaque(System.Byte[]);
 System.Void GetBinaryForm(System.Byte[],System.Int32);
 }
 class CompoundAceType : System.Enum{
+Int32 value__;
 }
 class CompoundAce : System.Security.AccessControl.KnownAce{
 this (System.Security.AccessControl.AceFlags,System.Int32,System.Security.AccessControl.CompoundAceType,System.Security.Principal.SecurityIdentifier);
@@ -65,6 +75,7 @@ System.Int32 get_BinaryLength();
 System.Void GetBinaryForm(System.Byte[],System.Int32);
 }
 class AceQualifier : System.Enum{
+Int32 value__;
 }
 class QualifiedAce : System.Security.AccessControl.KnownAce{
 System.Security.AccessControl.AceQualifier get_AceQualifier();
@@ -80,6 +91,7 @@ static System.Int32 MaxOpaqueLength(System.Boolean);
 System.Void GetBinaryForm(System.Byte[],System.Int32);
 }
 class ObjectAceFlags : System.Enum{
+Int32 value__;
 }
 class ObjectAce : System.Security.AccessControl.QualifiedAce{
 this (System.Security.AccessControl.AceFlags,System.Security.AccessControl.AceQualifier,System.Int32,System.Security.Principal.SecurityIdentifier,System.Security.AccessControl.ObjectAceFlags,System.Guid,System.Guid,System.Boolean,System.Byte[]);
@@ -170,6 +182,7 @@ System.Void RemoveAccessSpecific(System.Security.AccessControl.AccessControlType
 System.Void RemoveAccessSpecific(System.Security.AccessControl.AccessControlType,System.Security.Principal.SecurityIdentifier,System.Int32,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.ObjectAceFlags,System.Guid,System.Guid);
 }
 class CryptoKeyRights : System.Enum{
+Int32 value__;
 }
 class CryptoKeyAccessRule : System.Security.AccessControl.AccessRule{
 this (System.Security.Principal.IdentityReference,System.Security.AccessControl.CryptoKeyRights,System.Security.AccessControl.AccessControlType);
@@ -202,6 +215,7 @@ System.Type get_AccessRuleType();
 System.Type get_AuditRuleType();
 }
 class EventWaitHandleRights : System.Enum{
+Int32 value__;
 }
 class EventWaitHandleAccessRule : System.Security.AccessControl.AccessRule{
 this (System.Security.Principal.IdentityReference,System.Security.AccessControl.EventWaitHandleRights,System.Security.AccessControl.AccessControlType);
@@ -232,6 +246,7 @@ System.Type get_AccessRuleType();
 System.Type get_AuditRuleType();
 }
 class FileSystemRights : System.Enum{
+Int32 value__;
 }
 class FileSystemAccessRule : System.Security.AccessControl.AccessRule{
 this (System.Security.Principal.IdentityReference,System.Security.AccessControl.FileSystemRights,System.Security.AccessControl.AccessControlType);
@@ -274,6 +289,7 @@ this ();
 this (System.String,System.Security.AccessControl.AccessControlSections);
 }
 class MutexRights : System.Enum{
+Int32 value__;
 }
 class MutexAccessRule : System.Security.AccessControl.AccessRule{
 this (System.Security.Principal.IdentityReference,System.Security.AccessControl.MutexRights,System.Security.AccessControl.AccessControlType);
@@ -307,6 +323,7 @@ System.Type get_AuditRuleType();
 class NativeObjectSecurity : System.Security.AccessControl.CommonObjectSecurity{
 }
 class AccessControlModification : System.Enum{
+Int32 value__;
 }
 class ObjectSecurity : System.__object{
 System.Security.Principal.IdentityReference GetOwner(System.Type);
@@ -345,6 +362,7 @@ System.Security.AccessControl.AuthorizationRuleCollection GetAccessRules(System.
 System.Security.AccessControl.AuthorizationRuleCollection GetAuditRules(System.Boolean,System.Boolean,System.Type);
 }
 class RegistryRights : System.Enum{
+Int32 value__;
 }
 class RegistryAccessRule : System.Security.AccessControl.AccessRule{
 this (System.Security.Principal.IdentityReference,System.Security.AccessControl.RegistryRights,System.Security.AccessControl.AccessControlType);
@@ -378,6 +396,7 @@ System.Type get_AccessRuleType();
 System.Type get_AuditRuleType();
 }
 class AccessControlType : System.Enum{
+Int32 value__;
 }
 class AuthorizationRule : System.__object{
 System.Security.Principal.IdentityReference get_IdentityReference();
@@ -408,6 +427,7 @@ System.Void CopyTo(System.Security.AccessControl.AuthorizationRule[],System.Int3
 System.Security.AccessControl.AuthorizationRule get_Item(System.Int32);
 }
 class ControlFlags : System.Enum{
+Int32 value__;
 }
 class GenericSecurityDescriptor : System.__object{
 System.Int32 get_BinaryLength();

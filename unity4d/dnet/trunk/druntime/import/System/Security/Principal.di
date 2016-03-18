@@ -31,12 +31,16 @@ System.Security.Principal.IIdentity get_Identity();
 System.Boolean IsInRole(System.String);
 }
 class PrincipalPolicy : System.Enum{
+Int32 value__;
 }
 class TokenAccessLevels : System.Enum{
+Int32 value__;
 }
 class TokenImpersonationLevel : System.Enum{
+Int32 value__;
 }
 class WindowsAccountType : System.Enum{
+Int32 value__;
 }
 class WindowsIdentity : System.Security.Claims.ClaimsIdentity{
 this (System.IntPtr);
@@ -73,6 +77,7 @@ System.Void Undo();
 System.Void Dispose();
 }
 class WindowsBuiltInRole : System.Enum{
+Int32 value__;
 }
 class WindowsPrincipal : System.Security.Claims.ClaimsPrincipal{
 this (System.Security.Principal.WindowsIdentity);
@@ -120,6 +125,7 @@ static System.Boolean op_Equality(System.Security.Principal.NTAccount,System.Sec
 static System.Boolean op_Inequality(System.Security.Principal.NTAccount,System.Security.Principal.NTAccount);
 }
 class WellKnownSidType : System.Enum{
+Int32 value__;
 }
 class SecurityIdentifier : System.Security.Principal.IdentityReference{
 this (System.String);

@@ -5,8 +5,10 @@ pragma(assembly,"mscorlib"){
 class CriticalFinalizerObject : System.__object{
 }
 class Consistency : System.Enum{
+Int32 value__;
 }
 class Cer : System.Enum{
+Int32 value__;
 }
 class ReliabilityContractAttribute : System.Attribute{
 this (System.Runtime.ConstrainedExecution.Consistency,System.Runtime.ConstrainedExecution.Cer);

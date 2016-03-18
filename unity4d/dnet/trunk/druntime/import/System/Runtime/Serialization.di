@@ -171,6 +171,7 @@ System.Int32 GetHashCode();
 System.Runtime.Serialization.StreamingContextStates get_State();
 }
 class StreamingContextStates : System.Enum{
+Int32 value__;
 }
 class Formatter : System.__object{
 System.__object Deserialize(System.IO.Stream);

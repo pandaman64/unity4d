@@ -53,8 +53,10 @@ System.Void set_TwoDigitYearMax(System.Int32);
 System.Int32 ToFourDigitYear(System.Int32);
 }
 class CalendarAlgorithmType : System.Enum{
+Int32 value__;
 }
 class CalendarWeekRule : System.Enum{
+Int32 value__;
 }
 class CharUnicodeInfo : System.__object{
 static System.Double GetNumericValue(System.Char);
@@ -67,6 +69,7 @@ static System.Globalization.UnicodeCategory GetUnicodeCategory(System.Char);
 static System.Globalization.UnicodeCategory GetUnicodeCategory(System.String,System.Int32);
 }
 class CompareOptions : System.Enum{
+Int32 value__;
 }
 class CompareInfo : System.__object{
 static System.Globalization.CompareInfo GetCompareInfo(System.Int32,System.Reflection.Assembly);
@@ -173,8 +176,10 @@ static System.Globalization.CultureInfo GetCultureInfo(System.String,System.Stri
 static System.Globalization.CultureInfo GetCultureInfoByIetfLanguageTag(System.String);
 }
 class CultureTypes : System.Enum{
+Int32 value__;
 }
 class DateTimeStyles : System.Enum{
+Int32 value__;
 }
 class DateTimeFormatInfo : System.__object{
 this ();
@@ -250,6 +255,7 @@ System.DateTime get_End();
 System.TimeSpan get_Delta();
 }
 class DigitShapes : System.Enum{
+Int32 value__;
 }
 class GregorianCalendar : System.Globalization.Calendar{
 this (System.Globalization.GregorianCalendarTypes);
@@ -281,6 +287,7 @@ System.Void set_TwoDigitYearMax(System.Int32);
 System.Int32 ToFourDigitYear(System.Int32);
 }
 class GregorianCalendarTypes : System.Enum{
+Int32 value__;
 }
 class HebrewCalendar : System.Globalization.Calendar{
 this ();
@@ -664,6 +671,7 @@ System.Void set_TwoDigitYearMax(System.Int32);
 System.Int32 ToFourDigitYear(System.Int32);
 }
 class TimeSpanStyles : System.Enum{
+Int32 value__;
 }
 class NumberFormatInfo : System.__object{
 this ();
@@ -730,8 +738,10 @@ System.__object GetFormat(System.Type);
 static System.Globalization.NumberFormatInfo ReadOnly(System.Globalization.NumberFormatInfo);
 }
 class NumberStyles : System.Enum{
+Int32 value__;
 }
 class UnicodeCategory : System.Enum{
+Int32 value__;
 }
 class SortVersion : System.__object{
 this (System.Int32,System.Guid);

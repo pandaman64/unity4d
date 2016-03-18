@@ -31,6 +31,7 @@ class ParallelLoopResult : System.ValueType{
 System.Boolean get_IsCompleted();
 }
 class TaskStatus : System.Enum{
+Int32 value__;
 }
 class Task : System.__object{
 this (System.Action);
@@ -79,8 +80,10 @@ static System.Threading.Tasks.Task Delay(System.Int32,System.Threading.Cancellat
 static System.Threading.Tasks.Task WhenAll(System.Threading.Tasks.Task[]);
 }
 class TaskCreationOptions : System.Enum{
+Int32 value__;
 }
 class TaskContinuationOptions : System.Enum{
+Int32 value__;
 }
 class TaskFactory : System.__object{
 this ();

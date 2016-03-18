@@ -97,6 +97,7 @@ System.Void SetMethodSourceRange(System.Diagnostics.SymbolStore.ISymbolDocumentW
 System.Void SetUnderlyingWriter(System.IntPtr);
 }
 class SymAddressKind : System.Enum{
+Int32 value__;
 }
 class SymDocumentType : System.__object{
 this ();

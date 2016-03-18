@@ -58,6 +58,7 @@ static System.Void Invariant(System.Boolean,System.String);
 static System.Void EndContractBlock();
 }
 class ContractFailureKind : System.Enum{
+Int32 value__;
 }
 class ContractFailedEventArgs : System.EventArgs{
 System.String get_Message();

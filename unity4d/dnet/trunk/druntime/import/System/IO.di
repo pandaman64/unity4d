@@ -155,8 +155,10 @@ System.Void Delete(System.Boolean);
 System.String ToString();
 }
 class SearchOption : System.Enum{
+Int32 value__;
 }
 class DriveType : System.Enum{
+Int32 value__;
 }
 class DriveInfo : System.__object{
 this (System.String);
@@ -226,6 +228,7 @@ static System.Void Replace(System.String,System.String,System.String);
 static System.Void Replace(System.String,System.String,System.String,System.Boolean);
 }
 class FileAccess : System.Enum{
+Int32 value__;
 }
 class FileInfo : System.IO.FileSystemInfo{
 this (System.String);
@@ -259,10 +262,13 @@ System.IO.FileInfo Replace(System.String,System.String,System.Boolean);
 System.String ToString();
 }
 class FileMode : System.Enum{
+Int32 value__;
 }
 class FileOptions : System.Enum{
+Int32 value__;
 }
 class FileShare : System.Enum{
+Int32 value__;
 }
 class FileStream : System.IO.Stream{
 this (System.String,System.IO.FileMode);
@@ -332,6 +338,7 @@ System.Void set_Attributes(System.IO.FileAttributes);
 System.Void GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext);
 }
 class FileAttributes : System.Enum{
+Int32 value__;
 }
 class MemoryStream : System.IO.Stream{
 this ();
@@ -383,6 +390,7 @@ static System.String Combine(System.String,System.String,System.String,System.St
 static System.String Combine(System.String[]);
 }
 class SeekOrigin : System.Enum{
+Int32 value__;
 }
 class Stream : System.MarshalByRefObject{
 System.Boolean get_CanRead();

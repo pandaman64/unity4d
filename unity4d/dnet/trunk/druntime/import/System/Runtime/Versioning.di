@@ -3,6 +3,7 @@ import System;
 public:
 pragma(assembly,"mscorlib"){
 class ComponentGuaranteesOptions : System.Enum{
+Int32 value__;
 }
 class ComponentGuaranteesAttribute : System.Attribute{
 this (System.Runtime.Versioning.ComponentGuaranteesOptions);
@@ -19,6 +20,7 @@ this (System.Runtime.Versioning.ResourceScope);
 System.Runtime.Versioning.ResourceScope get_ResourceExposureLevel();
 }
 class ResourceScope : System.Enum{
+Int32 value__;
 }
 class VersioningHelper : System.__object{
 static System.String MakeVersionSafeName(System.String,System.Runtime.Versioning.ResourceScope,System.Runtime.Versioning.ResourceScope,System.Type);

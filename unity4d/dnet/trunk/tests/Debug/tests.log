@@ -1,8 +1,9 @@
 ﻿  root.c
-  mem.c
+d:\pan\unity4d\unity4d\dnet\trunk\dmd\root.c(10): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   test.cpp
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   smoketest.cpp
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\crtdefs.h(10): fatal error C1083: include ファイルを開けません。'corecrt.h':No such file or directory
   array.c
+d:\pan\unity4d\unity4d\dnet\trunk\dmd\array.c(10): fatal error C1083: include ファイルを開けません。'stdio.h':No such file or directory
   コードを生成中...
-array.obj : warning LNK4075: /EDITANDCONTINUE は /SAFESEH の指定によって無視されます。
-  tests.vcxproj -> D:\pan\unity4d\unity4d\dnet\Debug\tests.exe

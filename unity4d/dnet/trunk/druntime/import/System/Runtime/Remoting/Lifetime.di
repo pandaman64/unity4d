@@ -32,6 +32,7 @@ interface ISponsor{
 System.TimeSpan Renewal(System.Runtime.Remoting.Lifetime.ILease);
 }
 class LeaseState : System.Enum{
+Int32 value__;
 }
 class LifetimeServices : System.__object{
 this ();

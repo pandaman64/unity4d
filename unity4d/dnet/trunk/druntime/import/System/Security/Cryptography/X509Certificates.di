@@ -5,8 +5,10 @@ import System.Runtime.Serialization;
 public:
 pragma(assembly,"mscorlib"){
 class X509ContentType : System.Enum{
+Int32 value__;
 }
 class X509KeyStorageFlags : System.Enum{
+Int32 value__;
 }
 class X509Certificate : System.__object{
 this ();

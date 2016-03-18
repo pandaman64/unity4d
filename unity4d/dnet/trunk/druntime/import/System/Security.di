@@ -46,8 +46,10 @@ System.Security.PartialTrustVisibilityLevel get_PartialTrustVisibilityLevel();
 System.Void set_PartialTrustVisibilityLevel(System.Security.PartialTrustVisibilityLevel);
 }
 class PartialTrustVisibilityLevel : System.Enum{
+Int32 value__;
 }
 class SecurityCriticalScope : System.Enum{
+Int32 value__;
 }
 class SecurityCriticalAttribute : System.Attribute{
 this ();
@@ -64,6 +66,7 @@ class SecurityTransparentAttribute : System.Attribute{
 this ();
 }
 class SecurityRuleSet : System.Enum{
+Byte value__;
 }
 class SecurityRulesAttribute : System.Attribute{
 this (System.Security.SecurityRuleSet);
@@ -115,6 +118,7 @@ System.Void Deny();
 System.Void PermitOnly();
 }
 class HostSecurityManagerOptions : System.Enum{
+Int32 value__;
 }
 class HostSecurityManager : System.__object{
 this ();
@@ -198,6 +202,7 @@ System.Void RemoveAt(System.Int32);
 System.Void SetAt(System.Int32,System.Char);
 }
 class SecurityContextSource : System.Enum{
+Int32 value__;
 }
 class SecurityContext : System.__object{
 static System.Void Run(System.Security.SecurityContext,System.Threading.ContextCallback,System.__object);
@@ -215,6 +220,7 @@ System.Boolean IsStateAvailable();
 System.Void EnsureState();
 }
 class PolicyLevelType : System.Enum{
+Int32 value__;
 }
 class SecurityManager : System.__object{
 static System.Security.PermissionSet GetStandardSandbox(System.Security.Policy.Evidence);
@@ -235,5 +241,6 @@ static System.Boolean get_SecurityEnabled();
 static System.Void set_SecurityEnabled(System.Boolean);
 }
 class SecurityZone : System.Enum{
+Int32 value__;
 }
 }

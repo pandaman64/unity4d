@@ -59,6 +59,7 @@ static System.Security.Policy.ApplicationTrustCollection get_UserApplicationTrus
 static System.Security.Policy.IApplicationTrustManager get_ApplicationTrustManager();
 }
 class ApplicationVersionMatch : System.Enum{
+Int32 value__;
 }
 class ApplicationTrust : System.Security.Policy.EvidenceBase{
 this (System.ApplicationIdentity);
@@ -183,6 +184,7 @@ interface IApplicationTrustManager{
 System.Security.Policy.ApplicationTrust DetermineApplicationTrust(System.ActivationContext,System.Security.Policy.TrustManagerContext);
 }
 class TrustManagerUIContext : System.Enum{
+Int32 value__;
 }
 class TrustManagerContext : System.__object{
 this ();
@@ -258,6 +260,7 @@ System.Void Reset();
 System.Security.SecurityElement ToXml();
 }
 class PolicyStatementAttribute : System.Enum{
+Int32 value__;
 }
 class PolicyStatement : System.__object{
 this (System.Security.PermissionSet);

@@ -276,6 +276,7 @@ System.Text.Encoding GetEncoding(System.String,System.Text.EncoderFallback,Syste
 System.Text.Encoding GetEncoding(System.Int32,System.Text.EncoderFallback,System.Text.DecoderFallback);
 }
 class NormalizationForm : System.Enum{
+Int32 value__;
 }
 class UnicodeEncoding : System.Text.Encoding{
 this ();

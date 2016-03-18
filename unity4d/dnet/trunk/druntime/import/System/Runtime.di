@@ -8,8 +8,10 @@ this (System.Int32);
 System.Void Dispose();
 }
 class GCLargeObjectHeapCompactionMode : System.Enum{
+Int32 value__;
 }
 class GCLatencyMode : System.Enum{
+Int32 value__;
 }
 class GCSettings : System.__object{
 static System.Runtime.GCLatencyMode get_LatencyMode();

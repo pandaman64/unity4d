@@ -81,5 +81,6 @@ this (System.String);
 System.String get_Version();
 }
 class UltimateResourceFallbackLocation : System.Enum{
+Int32 value__;
 }
 }

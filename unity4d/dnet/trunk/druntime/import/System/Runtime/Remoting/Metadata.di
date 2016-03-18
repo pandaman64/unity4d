@@ -3,8 +3,10 @@ import System;
 public:
 pragma(assembly,"mscorlib"){
 class SoapOption : System.Enum{
+Int32 value__;
 }
 class XmlFieldOrderOption : System.Enum{
+Int32 value__;
 }
 class SoapTypeAttribute : System.Runtime.Remoting.Metadata.SoapAttribute{
 this ();

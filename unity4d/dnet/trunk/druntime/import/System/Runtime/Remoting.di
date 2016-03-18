@@ -13,6 +13,7 @@ interface IObjectHandle{
 System.__object Unwrap();
 }
 class WellKnownObjectMode : System.Enum{
+Int32 value__;
 }
 interface IRemotingTypeInfo{
 System.String get_TypeName();
@@ -114,6 +115,7 @@ System.Void set_ContextAttributes(System.Runtime.Remoting.Contexts.IContextAttri
 System.String ToString();
 }
 class CustomErrorsModes : System.Enum{
+Int32 value__;
 }
 class RemotingServices : System.__object{
 static System.Boolean IsTransparentProxy(System.__object);

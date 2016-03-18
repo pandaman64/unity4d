@@ -13,7 +13,14 @@ namespace NetToD
     {
         static string CommaSeparatedRepresentation(this IEnumerable<ParameterInfo> parameters)
         {
-            return string.Join(",", parameters.Select(p => p.ParameterType.DFullName()));
+            return string.Join(",", parameters.Select(p =>
+            {
+                if (p.IsOut)
+                {
+                    return "out " + p.ParameterType.DFullName();
+                }
+                return p.ParameterType.DFullName();
+            }));
         }
 
         static string DName(this Type type)
@@ -72,7 +79,7 @@ namespace NetToD
 
         static FileStream GetModuleFile(string file,string @namespace)
         {
-            var root = ".\\";
+            var root = ".\\header\\";
             var suffix = ".di";
             if (@namespace == null)
             {
@@ -128,10 +135,10 @@ namespace NetToD
         }
         static bool IgnroedParameter(this ParameterInfo parameter)
         {
-            if (parameter.IsOut)
+            /*if (parameter.IsOut)
             {
                 return true;
-            }
+            }*/
             if (parameter.ParameterType.IgnoredType())
             {
                 return true;
@@ -166,6 +173,17 @@ namespace NetToD
             foreach (var nestedType in type.GetNestedTypes(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly))
             {
                 WriteType(writer, nestedType);
+            }
+
+            foreach (var field in type.GetFields(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly))
+            {
+                var fieldType = field.FieldType.DName();
+                var fieldName = field.Name;
+
+                if (fieldName != fieldType)
+                {
+                    writer.WriteLine("{0} {1};", fieldType, fieldName);
+                }
             }
 
             foreach (
@@ -218,7 +236,7 @@ namespace NetToD
         {
             foreach (var argument in args)
             {
-                var assembly = Assembly.Load(argument);
+                var assembly = Assembly.LoadFrom(argument);
                 var fullTypes =
                     assembly.GetExportedTypes()
                         .Where(type => !type.IsNested)

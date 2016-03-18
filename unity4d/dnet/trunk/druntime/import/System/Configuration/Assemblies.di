@@ -9,5 +9,6 @@ System.Void SetValue(System.Byte[]);
 System.__object Clone();
 }
 class AssemblyVersionCompatibility : System.Enum{
+Int32 value__;
 }
 }

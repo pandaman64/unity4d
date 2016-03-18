@@ -216,6 +216,10 @@ System.Runtime.Serialization.ISurrogateSelector GetNextSelector();
 System.Void UseSoapFormat();
 }
 class Header : System.__object{
+String Name;
+__object Value;
+Boolean MustUnderstand;
+String HeaderNamespace;
 this (System.String,System.__object);
 this (System.String,System.__object,System.Boolean);
 this (System.String,System.__object,System.Boolean,System.String);

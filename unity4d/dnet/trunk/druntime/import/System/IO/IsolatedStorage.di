@@ -14,6 +14,7 @@ import System.Security.Policy;
 public:
 pragma(assembly,"mscorlib"){
 class IsolatedStorageScope : System.Enum{
+Int32 value__;
 }
 class IsolatedStorage : System.MarshalByRefObject{
 System.UInt64 get_MaximumSize();
@@ -62,6 +63,7 @@ System.IAsyncResult BeginWrite(System.Byte[],System.Int32,System.Int32,System.As
 System.Void EndWrite(System.IAsyncResult);
 }
 class IsolatedStorageSecurityOptions : System.Enum{
+Int32 value__;
 }
 class IsolatedStorageSecurityState : System.Security.SecurityState{
 System.IO.IsolatedStorage.IsolatedStorageSecurityOptions get_Options();

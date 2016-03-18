@@ -11,6 +11,7 @@ System.Runtime.Remoting.Activation.IConstructionReturnMessage Activate(System.Ru
 System.Runtime.Remoting.Activation.ActivatorLevel get_Level();
 }
 class ActivatorLevel : System.Enum{
+Int32 value__;
 }
 interface IConstructionCallMessage{
 System.Runtime.Remoting.Activation.IActivator get_Activator();

@@ -1770,6 +1770,7 @@ static System.Int16 Parse(System.String,System.Globalization.NumberStyles,System
 System.TypeCode GetTypeCode();
 }
 class Int32 : System.ValueType{
+this(int);
 System.Int32 CompareTo(System.__object);
 System.Int32 CompareTo(System.Int32);
 System.Boolean Equals(System.__object);

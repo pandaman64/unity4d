@@ -6,6 +6,7 @@ import System.Reflection;
 public:
 pragma(assembly,"mscorlib"){
 class EventActivityOptions : System.Enum{
+Int32 value__;
 }
 class EventSource : System.__object{
 this (System.String);
@@ -30,6 +31,7 @@ System.Void Write(System.String);
 System.Void Write(System.String,System.Diagnostics.Tracing.EventSourceOptions);
 }
 class EventSourceSettings : System.Enum{
+Int32 value__;
 }
 class EventListener : System.__object{
 System.Void Dispose();
@@ -92,18 +94,25 @@ class NonEventAttribute : System.Attribute{
 this ();
 }
 class EventCommand : System.Enum{
+Int32 value__;
 }
 class EventManifestOptions : System.Enum{
+Int32 value__;
 }
 class EventLevel : System.Enum{
+Int32 value__;
 }
 class EventTask : System.Enum{
+Int32 value__;
 }
 class EventOpcode : System.Enum{
+Int32 value__;
 }
 class EventChannel : System.Enum{
+Byte value__;
 }
 class EventKeywords : System.Enum{
+Int64 value__;
 }
 class EventDataAttribute : System.Attribute{
 this ();
@@ -111,6 +120,7 @@ System.String get_Name();
 System.Void set_Name(System.String);
 }
 class EventFieldTags : System.Enum{
+Int32 value__;
 }
 class EventFieldAttribute : System.Attribute{
 this ();
@@ -120,6 +130,7 @@ System.Diagnostics.Tracing.EventFieldFormat get_Format();
 System.Void set_Format(System.Diagnostics.Tracing.EventFieldFormat);
 }
 class EventFieldFormat : System.Enum{
+Int32 value__;
 }
 class EventIgnoreAttribute : System.Attribute{
 this ();
@@ -137,5 +148,6 @@ System.Diagnostics.Tracing.EventActivityOptions get_ActivityOptions();
 System.Void set_ActivityOptions(System.Diagnostics.Tracing.EventActivityOptions);
 }
 class EventTags : System.Enum{
+Int32 value__;
 }
 }

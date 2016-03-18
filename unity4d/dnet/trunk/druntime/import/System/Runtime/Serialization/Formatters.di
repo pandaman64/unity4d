@@ -6,10 +6,13 @@ import System.Runtime.Serialization;
 public:
 pragma(assembly,"mscorlib"){
 class FormatterTypeStyle : System.Enum{
+Int32 value__;
 }
 class FormatterAssemblyStyle : System.Enum{
+Int32 value__;
 }
 class TypeFilterLevel : System.Enum{
+Int32 value__;
 }
 interface ISoapMessage{
 System.String[] get_ParamNames();

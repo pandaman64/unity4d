@@ -12,8 +12,10 @@ import System.Runtime.Remoting;
 public:
 pragma(assembly,"mscorlib"){
 class CipherMode : System.Enum{
+Int32 value__;
 }
 class PaddingMode : System.Enum{
+Int32 value__;
 }
 class KeySizes : System.__object{
 this (System.Int32,System.Int32,System.Int32);
@@ -87,6 +89,7 @@ System.Byte[] CreateSignature(System.Security.Cryptography.HashAlgorithm);
 System.Byte[] CreateSignature(System.Byte[]);
 }
 class FromBase64TransformMode : System.Enum{
+Int32 value__;
 }
 class ToBase64Transform : System.__object{
 this ();
@@ -124,8 +127,13 @@ System.Int32 TransformBlock(System.Byte[],System.Int32,System.Int32,System.Byte[
 System.Byte[] TransformFinalBlock(System.Byte[],System.Int32,System.Int32);
 }
 class CspProviderFlags : System.Enum{
+Int32 value__;
 }
 class CspParameters : System.__object{
+Int32 ProviderType;
+String ProviderName;
+String KeyContainerName;
+Int32 KeyNumber;
 this ();
 this (System.Int32);
 this (System.Int32,System.String);
@@ -152,6 +160,7 @@ static System.String MapNameToOID(System.String);
 static System.Byte[] EncodeOID(System.String);
 }
 class CryptoStreamMode : System.Enum{
+Int32 value__;
 }
 class CryptoStream : System.IO.Stream{
 this (System.IO.Stream,System.Security.Cryptography.ICryptoTransform,System.Security.Cryptography.CryptoStreamMode);
@@ -192,6 +201,14 @@ System.Void Reset();
 System.Void Dispose();
 }
 class DSAParameters : System.ValueType{
+Byte[] P;
+Byte[] Q;
+Byte[] G;
+Byte[] Y;
+Byte[] J;
+Byte[] X;
+Byte[] Seed;
+Int32 Counter;
 }
 class DSA : System.Security.Cryptography.AsymmetricAlgorithm{
 static System.Security.Cryptography.DSA Create();
@@ -316,6 +333,7 @@ static System.Boolean op_Equality(System.Security.Cryptography.HashAlgorithmName
 static System.Boolean op_Inequality(System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.HashAlgorithmName);
 }
 class KeyNumber : System.Enum{
+Int32 value__;
 }
 class CspKeyContainerInfo : System.__object{
 this (System.Security.Cryptography.CspParameters);
@@ -430,6 +448,14 @@ this ();
 System.Void Initialize();
 }
 class RSAParameters : System.ValueType{
+Byte[] Exponent;
+Byte[] Modulus;
+Byte[] P;
+Byte[] Q;
+Byte[] DP;
+Byte[] DQ;
+Byte[] InverseQ;
+Byte[] D;
 }
 class RSA : System.Security.Cryptography.AsymmetricAlgorithm{
 static System.Security.Cryptography.RSA Create();
@@ -465,6 +491,7 @@ static System.Boolean op_Inequality(System.Security.Cryptography.RSASignaturePad
 System.String ToString();
 }
 class RSASignaturePaddingMode : System.Enum{
+Int32 value__;
 }
 class RSACryptoServiceProvider : System.Security.Cryptography.RSA{
 this ();
@@ -516,6 +543,7 @@ static System.Boolean op_Inequality(System.Security.Cryptography.RSAEncryptionPa
 System.String ToString();
 }
 class RSAEncryptionPaddingMode : System.Enum{
+Int32 value__;
 }
 class RSAOAEPKeyExchangeDeformatter : System.Security.Cryptography.AsymmetricKeyExchangeDeformatter{
 this ();

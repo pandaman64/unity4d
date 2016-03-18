@@ -411,6 +411,9 @@ static System.Boolean op_Equality(System.Runtime.InteropServices.ArrayWithOffset
 static System.Boolean op_Inequality(System.Runtime.InteropServices.ArrayWithOffset,System.Runtime.InteropServices.ArrayWithOffset);
 }
 class UnmanagedFunctionPointerAttribute : System.Attribute{
+Boolean BestFitMapping;
+Boolean ThrowOnUnmappableChar;
+Boolean SetLastError;
 this (System.Runtime.InteropServices.CallingConvention);
 System.Runtime.InteropServices.CallingConvention get_CallingConvention();
 }
@@ -428,6 +431,7 @@ this (System.Int32);
 System.Int32 get_Value();
 }
 class ComInterfaceType : System.Enum{
+Int32 value__;
 }
 class InterfaceTypeAttribute : System.Attribute{
 this (System.Runtime.InteropServices.ComInterfaceType);
@@ -439,6 +443,7 @@ this (System.Type);
 System.Type get_Value();
 }
 class ClassInterfaceType : System.Enum{
+Int32 value__;
 }
 class ClassInterfaceAttribute : System.Attribute{
 this (System.Runtime.InteropServices.ClassInterfaceType);
@@ -472,6 +477,7 @@ this (System.String);
 System.String get_Value();
 }
 class IDispatchImplType : System.Enum{
+Int32 value__;
 }
 class IDispatchImplAttribute : System.Attribute{
 this (System.Runtime.InteropServices.IDispatchImplType);
@@ -490,10 +496,13 @@ class ComConversionLossAttribute : System.Attribute{
 this ();
 }
 class TypeLibTypeFlags : System.Enum{
+Int32 value__;
 }
 class TypeLibFuncFlags : System.Enum{
+Int32 value__;
 }
 class TypeLibVarFlags : System.Enum{
+Int32 value__;
 }
 class TypeLibTypeAttribute : System.Attribute{
 this (System.Runtime.InteropServices.TypeLibTypeFlags);
@@ -511,10 +520,21 @@ this (System.Int16);
 System.Runtime.InteropServices.TypeLibVarFlags get_Value();
 }
 class VarEnum : System.Enum{
+Int32 value__;
 }
 class UnmanagedType : System.Enum{
+Int32 value__;
 }
 class MarshalAsAttribute : System.Attribute{
+VarEnum SafeArraySubType;
+Type SafeArrayUserDefinedSubType;
+Int32 IidParameterIndex;
+UnmanagedType ArraySubType;
+Int16 SizeParamIndex;
+Int32 SizeConst;
+String MarshalType;
+Type MarshalTypeRef;
+String MarshalCookie;
 this (System.Runtime.InteropServices.UnmanagedType);
 this (System.Int16);
 System.Runtime.InteropServices.UnmanagedType get_Value();
@@ -539,16 +559,25 @@ class OptionalAttribute : System.Attribute{
 this ();
 }
 class DllImportSearchPath : System.Enum{
+Int32 value__;
 }
 class DefaultDllImportSearchPathsAttribute : System.Attribute{
 this (System.Runtime.InteropServices.DllImportSearchPath);
 System.Runtime.InteropServices.DllImportSearchPath get_Paths();
 }
 class DllImportAttribute : System.Attribute{
+String EntryPoint;
+Boolean SetLastError;
+Boolean ExactSpelling;
+Boolean PreserveSig;
+Boolean BestFitMapping;
+Boolean ThrowOnUnmappableChar;
 this (System.String);
 System.String get_Value();
 }
 class StructLayoutAttribute : System.Attribute{
+Int32 Pack;
+Int32 Size;
 this (System.Runtime.InteropServices.LayoutKind);
 this (System.Int16);
 System.Runtime.InteropServices.LayoutKind get_Value();
@@ -592,6 +621,7 @@ System.Int32 get_BuildNumber();
 System.Int32 get_RevisionNumber();
 }
 class BestFitMappingAttribute : System.Attribute{
+Boolean ThrowOnUnmappableChar;
 this (System.Boolean);
 System.Boolean get_BestFitMapping();
 }
@@ -608,8 +638,10 @@ System.Type get_ClassType();
 System.String get_MethodName();
 }
 class CallingConvention : System.Enum{
+Int32 value__;
 }
 class CharSet : System.Enum{
+Int32 value__;
 }
 class CriticalHandle : System.Runtime.ConstrainedExecution.CriticalFinalizerObject{
 System.Boolean get_IsClosed();
@@ -619,6 +651,7 @@ System.Void Dispose();
 System.Void SetHandleAsInvalid();
 }
 class GCHandleType : System.Enum{
+Int32 value__;
 }
 class GCHandle : System.ValueType{
 static System.Runtime.InteropServices.GCHandle Alloc(System.__object);
@@ -666,8 +699,10 @@ System.Void GetObjectData(System.Runtime.Serialization.SerializationInfo,System.
 System.Reflection.MethodBase get_TargetSite();
 }
 class LayoutKind : System.Enum{
+Int32 value__;
 }
 class CustomQueryInterfaceMode : System.Enum{
+Int32 value__;
 }
 class Marshal : System.__object{
 static System.String PtrToStringAnsi(System.IntPtr);
@@ -867,6 +902,7 @@ this (System.__object);
 System.__object get_WrappedObject();
 }
 class ComMemberType : System.Enum{
+Int32 value__;
 }
 class ExtensibleClassFactory : System.__object{
 static System.Void RegisterObjectCreationCallback(System.Runtime.InteropServices.ObjectCreationDelegate);
@@ -878,10 +914,12 @@ interface ICustomFactory{
 System.MarshalByRefObject CreateInstance(System.Type);
 }
 class CustomQueryInterfaceResult : System.Enum{
+Int32 value__;
 }
 interface ICustomQueryInterface{
 }
 class AssemblyRegistrationFlags : System.Enum{
+Int32 value__;
 }
 interface IRegistrationServices{
 System.Boolean RegisterAssembly(System.Reflection.Assembly,System.Runtime.InteropServices.AssemblyRegistrationFlags);
@@ -893,12 +931,16 @@ System.Boolean TypeRequiresRegistration(System.Type);
 System.Boolean TypeRepresentsComType(System.Type);
 }
 class TypeLibImporterFlags : System.Enum{
+Int32 value__;
 }
 class TypeLibExporterFlags : System.Enum{
+Int32 value__;
 }
 class ImporterEventKind : System.Enum{
+Int32 value__;
 }
 class ExporterEventKind : System.Enum{
+Int32 value__;
 }
 interface ITypeLibImporterNotifySink{
 System.Void ReportEvent(System.Runtime.InteropServices.ImporterEventKind,System.Int32,System.String);
@@ -923,8 +965,10 @@ System.IAsyncResult BeginInvoke(System.IntPtr,System.AsyncCallback,System.__obje
 System.IntPtr EndInvoke(System.IAsyncResult);
 }
 class RegistrationClassContext : System.Enum{
+Int32 value__;
 }
 class RegistrationConnectionType : System.Enum{
+Int32 value__;
 }
 class RegistrationServices : System.__object{
 this ();
@@ -945,6 +989,10 @@ System.Reflection.Emit.AssemblyBuilder ConvertTypeLibToAssembly(System.__object,
 System.__object ConvertAssemblyToTypeLib(System.Reflection.Assembly,System.String,System.Runtime.InteropServices.TypeLibExporterFlags,System.Runtime.InteropServices.ITypeLibExporterNotifySink);
 }
 class BIND_OPTS : System.ValueType{
+Int32 cbStruct;
+Int32 grfFlags;
+Int32 grfMode;
+Int32 dwTickCountDeadline;
 }
 interface UCOMIBindCtx{
 System.Void RegisterObjectBound(System.__object);
@@ -963,6 +1011,8 @@ System.Int32 Skip(System.Int32);
 System.Int32 Reset();
 }
 class CONNECTDATA : System.ValueType{
+__object pUnk;
+Int32 dwCookie;
 }
 interface UCOMIEnumConnections{
 System.Int32 Skip(System.Int32);
@@ -983,6 +1033,8 @@ System.Int32 Reset();
 System.Void Clone(System.Int32);
 }
 class FILETIME : System.ValueType{
+Int32 dwLowDateTime;
+Int32 dwHighDateTime;
 }
 interface UCOMIMoniker{
 System.Int32 IsDirty();
@@ -1002,6 +1054,17 @@ System.Void Revoke(System.Int32);
 System.Void IsRunning(System.Runtime.InteropServices.UCOMIMoniker);
 }
 class STATSTG : System.ValueType{
+String pwcsName;
+Int32 type;
+Int64 cbSize;
+FILETIME mtime;
+FILETIME ctime;
+FILETIME atime;
+Int32 grfMode;
+Int32 grfLocksSupported;
+Guid clsid;
+Int32 grfStateBits;
+Int32 reserved;
 }
 interface UCOMIStream{
 System.Void Write(System.Byte[],System.Int32,System.IntPtr);
@@ -1014,52 +1077,125 @@ System.Void LockRegion(System.Int64,System.Int64,System.Int32);
 System.Void UnlockRegion(System.Int64,System.Int64,System.Int32);
 }
 class DESCKIND : System.Enum{
+Int32 value__;
 }
 class BINDPTR : System.ValueType{
+IntPtr lpfuncdesc;
+IntPtr lpvardesc;
+IntPtr lptcomp;
 }
 interface UCOMITypeComp{
 }
 class TYPEKIND : System.Enum{
+Int32 value__;
 }
 class TYPEFLAGS : System.Enum{
+Int16 value__;
 }
 class IMPLTYPEFLAGS : System.Enum{
+Int32 value__;
 }
 class TYPEATTR : System.ValueType{
+Guid guid;
+Int32 lcid;
+Int32 dwReserved;
+Int32 memidConstructor;
+Int32 memidDestructor;
+IntPtr lpstrSchema;
+Int32 cbSizeInstance;
+TYPEKIND typekind;
+Int16 cFuncs;
+Int16 cVars;
+Int16 cImplTypes;
+Int16 cbSizeVft;
+Int16 cbAlignment;
+TYPEFLAGS wTypeFlags;
+Int16 wMajorVerNum;
+Int16 wMinorVerNum;
+TYPEDESC tdescAlias;
+IDLDESC idldescType;
 }
 class FUNCDESC : System.ValueType{
+Int32 memid;
+IntPtr lprgscode;
+IntPtr lprgelemdescParam;
+FUNCKIND funckind;
+INVOKEKIND invkind;
+CALLCONV callconv;
+Int16 cParams;
+Int16 cParamsOpt;
+Int16 oVft;
+Int16 cScodes;
+ELEMDESC elemdescFunc;
+Int16 wFuncFlags;
 }
 class IDLFLAG : System.Enum{
+Int16 value__;
 }
 class IDLDESC : System.ValueType{
+Int32 dwReserved;
+IDLFLAG wIDLFlags;
 }
 class PARAMFLAG : System.Enum{
+Int16 value__;
 }
 class PARAMDESC : System.ValueType{
+IntPtr lpVarValue;
+PARAMFLAG wParamFlags;
 }
 class TYPEDESC : System.ValueType{
+IntPtr lpValue;
+Int16 vt;
 }
 class ELEMDESC : System.ValueType{
 static class DESCUNION : System.ValueType{
+IDLDESC idldesc;
+PARAMDESC paramdesc;
 }
+TYPEDESC tdesc;
+DESCUNION desc;
 }
 class VARDESC : System.ValueType{
 static class DESCUNION : System.ValueType{
+Int32 oInst;
+IntPtr lpvarValue;
 }
+Int32 memid;
+String lpstrSchema;
+ELEMDESC elemdescVar;
+Int16 wVarFlags;
+VarEnum varkind;
 }
 class DISPPARAMS : System.ValueType{
+IntPtr rgvarg;
+IntPtr rgdispidNamedArgs;
+Int32 cArgs;
+Int32 cNamedArgs;
 }
 class EXCEPINFO : System.ValueType{
+Int16 wCode;
+Int16 wReserved;
+String bstrSource;
+String bstrDescription;
+String bstrHelpFile;
+Int32 dwHelpContext;
+IntPtr pvReserved;
+IntPtr pfnDeferredFillIn;
 }
 class FUNCKIND : System.Enum{
+Int32 value__;
 }
 class INVOKEKIND : System.Enum{
+Int32 value__;
 }
 class CALLCONV : System.Enum{
+Int32 value__;
 }
 class FUNCFLAGS : System.Enum{
+Int16 value__;
 }
 class VARFLAGS : System.Enum{
+Int16 value__;
 }
 interface UCOMITypeInfo{
 System.Void ReleaseTypeAttr(System.IntPtr);
@@ -1067,10 +1203,18 @@ System.Void ReleaseFuncDesc(System.IntPtr);
 System.Void ReleaseVarDesc(System.IntPtr);
 }
 class SYSKIND : System.Enum{
+Int32 value__;
 }
 class LIBFLAGS : System.Enum{
+Int16 value__;
 }
 class TYPELIBATTR : System.ValueType{
+Guid guid;
+Int32 lcid;
+SYSKIND syskind;
+Int16 wMajorVerNum;
+Int16 wMinorVerNum;
+LIBFLAGS wLibFlags;
 }
 interface UCOMITypeLib{
 System.Int32 GetTypeInfoCount();

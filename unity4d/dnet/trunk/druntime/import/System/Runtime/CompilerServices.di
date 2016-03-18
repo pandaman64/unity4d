@@ -80,6 +80,7 @@ class DisablePrivateReflectionAttribute : System.Attribute{
 this ();
 }
 class CompilationRelaxations : System.Enum{
+Int32 value__;
 }
 class CompilationRelaxationsAttribute : System.Attribute{
 this (System.Int32);
@@ -109,8 +110,10 @@ System.Void set_AllInternalsVisible(System.Boolean);
 class IsVolatile : System.__object{
 }
 class MethodImplOptions : System.Enum{
+Int32 value__;
 }
 class MethodCodeType : System.Enum{
+Int32 value__;
 }
 class MethodImplAttribute : System.Attribute{
 this (System.Runtime.CompilerServices.MethodImplOptions);
@@ -129,6 +132,7 @@ this (System.Type);
 System.Type get_RequiredContract();
 }
 class LoadHint : System.Enum{
+Int32 value__;
 }
 class DefaultDependencyAttribute : System.Attribute{
 this (System.Runtime.CompilerServices.LoadHint);

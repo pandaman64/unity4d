@@ -31,6 +31,7 @@ this ();
 }
 class DebuggableAttribute : System.Attribute{
 static class DebuggingModes : System.Enum{
+Int32 value__;
 }
 this (System.Boolean,System.Boolean);
 this (System.Diagnostics.DebuggableAttribute.DebuggingModes);
@@ -39,6 +40,7 @@ System.Boolean get_IsJITOptimizerDisabled();
 System.Diagnostics.DebuggableAttribute.DebuggingModes get_DebuggingFlags();
 }
 class DebuggerBrowsableState : System.Enum{
+Int32 value__;
 }
 class DebuggerBrowsableAttribute : System.Attribute{
 this (System.Diagnostics.DebuggerBrowsableState);

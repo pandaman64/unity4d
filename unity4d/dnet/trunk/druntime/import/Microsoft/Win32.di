@@ -11,6 +11,7 @@ static System.Void SetValue(System.String,System.String,System.__object);
 static System.Void SetValue(System.String,System.String,System.__object,Microsoft.Win32.RegistryValueKind);
 }
 class RegistryHive : System.Enum{
+Int32 value__;
 }
 class RegistryKey : System.MarshalByRefObject{
 System.Void Close();
@@ -58,13 +59,18 @@ System.Security.AccessControl.RegistrySecurity GetAccessControl(System.Security.
 System.Void SetAccessControl(System.Security.AccessControl.RegistrySecurity);
 }
 class RegistryValueOptions : System.Enum{
+Int32 value__;
 }
 class RegistryKeyPermissionCheck : System.Enum{
+Int32 value__;
 }
 class RegistryOptions : System.Enum{
+Int32 value__;
 }
 class RegistryValueKind : System.Enum{
+Int32 value__;
 }
 class RegistryView : System.Enum{
+Int32 value__;
 }
 }

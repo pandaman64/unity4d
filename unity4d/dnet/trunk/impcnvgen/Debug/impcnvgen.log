@@ -1,3 +1,2 @@
-﻿  impcnvgen.c
-impcnvgen.obj : warning LNK4075: /EDITANDCONTINUE は /SAFESEH の指定によって無視されます。
-  impcnvgen.vcxproj -> D:\pan\unity4d\unity4d\dnet\trunk\impcnvgen\Debug\impcnvgen.exe
+﻿impcnvgen.obj : warning LNK4075: /EDITANDCONTINUE は /SAFESEH の指定によって無視されます。
+LINK : fatal error LNK1104: ファイル 'ucrtd.lib' を開くことができません。

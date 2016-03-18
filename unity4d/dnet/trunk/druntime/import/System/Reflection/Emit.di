@@ -69,6 +69,7 @@ System.Void Save(System.String);
 System.Void Save(System.String,System.Reflection.PortableExecutableKinds,System.Reflection.ImageFileMachine);
 }
 class AssemblyBuilderAccess : System.Enum{
+Int32 value__;
 }
 class ConstructorBuilder : System.Reflection.ConstructorInfo{
 System.String ToString();
@@ -395,6 +396,7 @@ System.Void SetSymCustomAttribute(System.String,System.Byte[]);
 System.Boolean IsTransient();
 }
 class PEFileKinds : System.Enum{
+Int32 value__;
 }
 class OpCodes : System.__object{
 static System.Boolean TakesSingleByteArgument(System.Reflection.Emit.OpCode);
@@ -416,12 +418,16 @@ System.Int32 GetHashCode();
 System.String ToString();
 }
 class OpCodeType : System.Enum{
+Int32 value__;
 }
 class StackBehaviour : System.Enum{
+Int32 value__;
 }
 class OperandType : System.Enum{
+Int32 value__;
 }
 class FlowControl : System.Enum{
+Int32 value__;
 }
 class ParameterBuilder : System.__object{
 System.Void SetMarshal(System.Reflection.Emit.UnmanagedMarshal);
@@ -519,6 +525,7 @@ static System.Boolean op_Equality(System.Reflection.Emit.StringToken,System.Refl
 static System.Boolean op_Inequality(System.Reflection.Emit.StringToken,System.Reflection.Emit.StringToken);
 }
 class PackingSize : System.Enum{
+Int32 value__;
 }
 class TypeToken : System.ValueType{
 System.Int32 get_Token();
